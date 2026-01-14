@@ -70,7 +70,7 @@ SOLANA                          ETHEREUM
 | Aspect | Solana | Arbitrum | Optimism | Base |
 |--------|--------|----------|----------|------|
 | **Type** | L1 | Optimistic Rollup | Optimistic Rollup | Optimistic Rollup |
-| **TPS** | 3,000-5,000 | 40,000+ | 40,000+ | 40,000+ |
+| **TPS** | 3,000-5,000 | 100-2,000+ (varies) | 100-2,000+ (varies) | 100-2,000+ (varies) |
 | **Finality** | ~12s | ~7 days* | ~7 days* | ~7 days* |
 | **Tx Cost** | $0.00025 | $0.01-0.10 | $0.01-0.10 | $0.001-0.01 |
 | **Settlement** | Self | Ethereum | Ethereum | Ethereum |
@@ -95,11 +95,10 @@ SOLANA                          ETHEREUM
 
 | Aspect | Solana | Avalanche | Near | Aptos | Sui |
 |--------|--------|-----------|------|-------|-----|
-| **TPS** | 5,000 | 4,500 | 100,000 | 160,000 | 120,000 |
+| **TPS (claimed peak)** | 65,000 | 4,500 | 100,000 | 100,000+ | 100,000+ |
 | **Finality** | 12s | 2s | 2s | <1s | 2-3s |
 | **Language** | Rust | Solidity | Rust | Move | Move |
 | **Age** | 2020 | 2020 | 2020 | 2022 | 2023 |
-| **TVL** | $5B+ | $1B+ | $200M+ | $500M+ | $500M+ |
 
 ### Consensus Mechanisms
 
@@ -183,9 +182,8 @@ module counter::counter {
 | Metric | Solana | Ethereum | Avalanche |
 |--------|--------|----------|-----------|
 | **Validators** | ~2,000 | ~900,000* | ~1,200 |
-| **Nakamoto Coeff** | ~30 | ~5 | ~25 |
 | **Min Stake** | Vote account + delegation | 32 ETH | 2,000 AVAX |
-| **Slashing** | Yes | Yes | No |
+| **Slashing** | Limited (mostly inactive) | Yes | No |
 
 *Ethereum counts attesters, not just block proposers
 
