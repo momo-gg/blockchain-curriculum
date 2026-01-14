@@ -97,7 +97,7 @@ A chronological overview of key events in blockchain history and Solana's develo
 - Solana Foundation grants program launches
 
 ### Q4 2020
-- **November**: Solana reaches $1 billion TVL
+- **November**: Solana TVL begins to climb as DeFi protocols launch
 - Ecosystem hackathon attracts developers
 - Token program gains adoption
 
@@ -119,7 +119,7 @@ A chronological overview of key events in blockchain history and Solana's develo
 ### Q3 2021
 - **August**: Degenerate Ape Academy mint (NFT mania begins)
 - **September 14**: Network outage (17 hours) due to bot activity
-- Solana reaches $200 billion market cap
+- Solana market cap peaks around ~$70-80B during the 2021 cycle
 - Magic Eden NFT marketplace launches
 
 ### Q4 2021
@@ -164,7 +164,7 @@ A chronological overview of key events in blockchain history and Solana's develo
 - Token-2022 (Token Extensions) launched
 - Compressed NFT minting becomes available
 - Jito MEV client gains adoption
-- Network processes 20M+ daily transactions
+- Network processes tens of millions of daily transactions (including vote transactions)
 
 ### Q2 2023
 - **April**: Saga phone ships

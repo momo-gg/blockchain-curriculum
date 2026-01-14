@@ -200,9 +200,9 @@ solders                 # Rust types in Python
 | Account | Focus |
 |---------|-------|
 | **@solana** | Official updates |
-| **@aaboronkova** | Solana Labs |
-| **@armaboronkov** | Anchor development |
-| **@heaboronlius** | Infrastructure |
+| **@solana_devs** | Developer updates |
+| **@coral_xyz** | Anchor development |
+| **@heliuslabs** | Infrastructure |
 | **@metaplex** | NFT ecosystem |
 
 ---

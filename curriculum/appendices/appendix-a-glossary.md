@@ -110,10 +110,10 @@ Executable code deployed on Solana (analogous to "smart contract" on other chain
 A special type of address derived from a program ID and seeds that doesn't have a corresponding private key. Used for program-controlled accounts.
 
 ### Rent
-The SOL cost for storing data on-chain. Accounts must maintain a minimum balance (rent-exempt threshold) to avoid being purged.
+The SOL cost for storing data on-chain. Rent collection is currently disabled on Solana, but accounts still must maintain a minimum rent-exempt balance.
 
 ### Rent Exemption
-When an account holds enough SOL to cover rent indefinitely (~0.00089 SOL per byte per 2 years, refunded on close).
+When an account holds enough SOL to cover rent indefinitely (minimum balance varies by data size, refunded on close).
 
 ### RPC (Remote Procedure Call)
 The API interface for interacting with Solana nodes. Used to query state, submit transactions, and subscribe to updates.
