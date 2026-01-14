@@ -48,9 +48,9 @@ This document maps your learning questions to curriculum modules, identifying ga
 | How are new validators added? | 3.4 | ✅ Covered |
 | How does governance work? (SIMDs) | 3.2, 3.4 | ✅ Covered |
 | What is Firedancer? | 3.2, 3.4 | ✅ Covered |
-| What is Alpenglow? | 3.2 | ⏳ To write |
-| Multiple concurrent leaders? | 3.2 | ⏳ To write |
-| Why was Solana Labs GitHub archived? | 3.2 | 🔄 Needs expansion |
+| What is Alpenglow? | 3.2 | ✅ Covered |
+| Multiple concurrent leaders? | 3.2 | ✅ Covered |
+| Why was Solana Labs GitHub archived? | 3.2 | ✅ Covered |
 | How are features gated and deployed? | 3.2 | ✅ Covered |
 | Solana vs competition comparison | 3.7 | ✅ Covered |
 
