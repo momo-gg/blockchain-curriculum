@@ -10,18 +10,18 @@ This document maps your learning questions to curriculum modules, identifying ga
 |----------|--------|--------|
 | What is a blockchain, really? (notebook analogy) | 1.2 | ✅ Covered |
 | How does Bitcoin mining/hashing work? | 1.2 | ✅ Covered |
-| What's PoW vs PoS difference? | 1.3, 2.2 | 🔄 Needs expansion |
+| What's PoW vs PoS difference? | 2.2 | ✅ Covered |
 | What is the blockchain trilemma? | 1.3 | ✅ Covered |
-| Why do blockchains need native coins for fees? | 1.2, 2.1 | 🔄 Needs expansion |
-| Why is Visa "slower" than Solana if centralized? | 3.1 | ⏳ To be added |
-| What is Byzantine Fault Tolerance? (2/3 rule) | 1.1 | 🔄 Needs 2/3 rule detail |
-| What prevents wealthy entities from always being leader? | 3.2 | ⏳ To be added |
-| How are cheaters detected and slashed? | 2.2, 3.2 | ⏳ To be added |
-| Where does "the protocol" actually live? | 1.2 | 🔄 Needs expansion |
-| What are blockchain "clients"? | New: 1.4 or 3.2 | ⏳ To be added |
-| Can I create my own client? Who funds development? | 3.2 | ⏳ To be added |
-| How do P2P networks stay connected? (gossip) | 3.2 | ⏳ To be added |
-| How did Solana launch from genesis? | 3.2 | ⏳ To be added |
+| Why do blockchains need native coins for fees? | 2.1 | ✅ Covered |
+| Why is Visa "slower" than Solana if centralized? | 2.2 | ✅ Covered |
+| What is Byzantine Fault Tolerance? (2/3 rule) | 2.2 | ✅ Covered |
+| What prevents wealthy entities from always being leader? | 2.2 | ✅ Covered |
+| How are cheaters detected and slashed? | 2.2 | ✅ Covered |
+| Where does "the protocol" actually live? | 2.1 | ✅ Covered |
+| What are blockchain "clients"? | 2.1, 3.2 | ✅ Covered |
+| Can I create my own client? Who funds development? | 2.1 | ✅ Covered (Ethereum example) |
+| How do P2P networks stay connected? (gossip) | 3.2 | ✅ Covered |
+| How did Solana launch from genesis? | 3.2 | ✅ Covered |
 
 ---
 
@@ -29,11 +29,11 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 | Question | Module | Status |
 |----------|--------|--------|
-| What are smart contracts? | 2.1 | ⏳ To write |
-| What is the EVM? | 2.1 | ⏳ To write |
-| What is gas and why? | 2.1, 2.2 | ⏳ To write |
-| How does Proof of Stake work? | 2.2 | ⏳ To write |
-| What is staking? | 2.2 | ⏳ To write |
+| What are smart contracts? | 2.1 | ✅ Covered |
+| What is the EVM? | 2.1 | ✅ Covered |
+| What is gas and why? | 2.1, 2.2 | ✅ Covered |
+| How does Proof of Stake work? | 2.2 | ✅ Covered |
+| What is staking? | 2.2 | ✅ Covered |
 
 ---
 
@@ -41,18 +41,18 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 | Question | Module | Status |
 |----------|--------|--------|
-| Why is Solana fast? (Proof of History) | 3.1, 3.2 | ⏳ To write |
-| How are leaders chosen? (stake-weighted lottery) | 3.2 | ⏳ To write |
-| Does speed fluctuate by leader? | 3.2 | ⏳ To write |
-| What are validator costs? (~$50K+/year) | 3.2 | ⏳ To write |
-| How are new validators added? | 3.2 | ⏳ To write |
-| How does governance work? (SIMDs) | 3.2 | ⏳ To write |
-| What is Firedancer? | 3.2 | ⏳ To write |
+| Why is Solana fast? (Proof of History) | 3.1, 3.2 | ✅ Covered |
+| How are leaders chosen? (stake-weighted lottery) | 3.4 | ✅ Covered |
+| Does speed fluctuate by leader? | 3.4 | ✅ Covered |
+| What are validator costs? (~$50K+/year) | 3.4 | ✅ Covered |
+| How are new validators added? | 3.4 | ✅ Covered |
+| How does governance work? (SIMDs) | 3.2, 3.4 | ✅ Covered |
+| What is Firedancer? | 3.2, 3.4 | ✅ Covered |
 | What is Alpenglow? | 3.2 | ⏳ To write |
 | Multiple concurrent leaders? | 3.2 | ⏳ To write |
-| Why was Solana Labs GitHub archived? | 3.2 | ⏳ To write |
-| How are features gated and deployed? | 3.2 | ⏳ To write |
-| Solana vs competition comparison | 3.4 | ⏳ To write |
+| Why was Solana Labs GitHub archived? | 3.2 | 🔄 Needs expansion |
+| How are features gated and deployed? | 3.2 | ✅ Covered |
+| Solana vs competition comparison | 3.7 | ✅ Covered |
 
 ---
 
@@ -77,12 +77,12 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 | Question | Module | Status |
 |----------|--------|--------|
-| How do digital signatures work? (Ed25519) | 4.3 | ⏳ To write |
-| Elliptic curve cryptography | 4.3 | ⏳ To write |
-| Signing/verification math | 4.3 | ⏳ To write |
-| SPL Token program | 4.5 | ⏳ To write |
-| Token-2022 extensions | 4.7 | ⏳ To write |
-| NFTs and Metaplex | 4.6 | ⏳ To write |
+| How do digital signatures work? (Ed25519) | 4.3 | ✅ Covered |
+| Elliptic curve cryptography | 4.3 | ✅ Covered |
+| Signing/verification math | 4.3 | ✅ Covered |
+| SPL Token program | 4.5 | ✅ Covered |
+| Token-2022 extensions | 4.7 | ✅ Covered |
+| NFTs and Metaplex | 4.6 | ✅ Covered |
 
 ---
 
@@ -90,9 +90,9 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 | Question | Module | Status |
 |----------|--------|--------|
-| Wallet adapters | 5.2 | ⏳ To write |
-| Reading on-chain data | 5.4 | ⏳ To write |
-| Transaction UIs | 5.3 | ⏳ To write |
+| Wallet adapters | 5.4 | ✅ Covered |
+| Reading on-chain data | 5.1 | ✅ Covered |
+| Transaction UIs | 5.3 | ✅ Covered |
 
 ---
 
@@ -100,10 +100,10 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 | Question | Module | Status |
 |----------|--------|--------|
-| Running RPC nodes | 6.1 | ⏳ To write |
-| Validator operations | 6.2 | ⏳ To write |
-| State compression | 6.4 | ⏳ To write |
-| Sealevel runtime details | 6.3 or new | ⏳ To write |
+| Running RPC nodes | 6.1 | ✅ Covered |
+| Validator operations | 3.4 | ✅ Covered |
+| State compression | 6.4 | ✅ Covered |
+| Sealevel runtime details | 6.3 | ✅ Covered |
 
 ---
 
