@@ -123,12 +123,10 @@ This document maps your learning questions to curriculum modules, identifying ga
 - What is Jito?
 - How to protect yourself
 
-### Module 5.5: Wallet Security & Architecture
-- Hot/cold storage
-- Seed management
-- Seedless wallets (Phantom's approach)
-- MPC vs traditional custody
-- Common scams
+### Module 5.5: Wallet Security & Architecture (covered in 5.4)
+- Custody models (self-custody, hardware, embedded)
+- Signing safety and UX expectations
+- Capability checks and fallbacks
 
 ---
 
@@ -164,10 +162,9 @@ Part 4-6: (Engineer track, unchanged)
 ## Priority Gaps to Address
 
 ### High Priority (Core Understanding)
-1. ⚠️ PoW vs PoS comparison needs dedicated section
-2. ⚠️ "Where does the protocol live?" needs answer
-3. ⚠️ Blockchain clients explanation needed
-4. ⚠️ Finality vs throughput (Visa question)
+Addressed in:
+- PoW vs PoS and finality/throughput: `curriculum/part-2-programmable-blockchain/2.2-ethereums-growing-pains.md`
+- Protocol location and clients: `curriculum/part-2-programmable-blockchain/2.1-ethereum-code-on-blockchain.md`
 
 ### Medium Priority (Solana Specifics)
 1. Staking mechanics module
