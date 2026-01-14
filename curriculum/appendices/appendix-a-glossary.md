@@ -13,7 +13,7 @@ An addressable storage unit on Solana that can hold data and SOL. Every piece of
 A 32-byte public key encoded in Base58. Used to identify accounts, programs, and wallets on the network. Example: `11111111111111111111111111111111`
 
 ### Block
-A collection of transactions processed together and added to the blockchain. Solana produces blocks approximately every 400ms.
+A collection of transactions processed together and added to the blockchain. On Solana, block timing is derived from slot timing and can vary (as of `solana-labs/solana` clock constants).
 
 ### Blockchain
 A distributed, immutable ledger of transactions maintained by a network of nodes through consensus. Each block references the previous block, creating a chain.
@@ -22,7 +22,7 @@ A distributed, immutable ledger of transactions maintained by a network of nodes
 The level of finality for a transaction or account query. Levels (from least to most final):
 - **processed**: Seen by the connected node
 - **confirmed**: Voted on by supermajority of stake
-- **finalized**: Cannot be rolled back (32+ blocks deep)
+- **finalized**: Cannot be rolled back (see Solana commitment docs)
 
 ### Consensus
 The mechanism by which network participants agree on the state of the blockchain. Solana uses a combination of Proof of Stake and Proof of History.
@@ -34,7 +34,7 @@ Distribution of control across multiple parties without a central authority. Mea
 When the blockchain diverges into two or more potential paths. Solana's consensus resolves forks to maintain a single canonical chain.
 
 ### Finality
-The guarantee that a transaction cannot be reversed. Solana achieves finality in ~12-13 seconds (32 slots × 400ms).
+The guarantee that a transaction cannot be reversed. On Solana, finality is expressed via commitment levels (as of [docs.solanalabs.com/consensus/commitments](https://docs.solanalabs.com/consensus/commitments)).
 
 ### Hash
 A fixed-size output from a cryptographic function. Used for block identification, transaction signatures, and data integrity verification.
@@ -52,7 +52,7 @@ The complete history of all transactions on the blockchain, maintained by valida
 A computer running Solana software that participates in the network. Can be a validator (producing blocks) or RPC node (serving queries).
 
 ### Slot
-A time window (~400ms) during which a leader can produce a block. The fundamental time unit in Solana.
+A time window (target ~400ms) during which a leader can produce a block. The fundamental time unit in Solana (as of `solana-labs/solana` clock constants).
 
 ### Transaction
 A signed message instructing the network to execute one or more operations. Contains instructions, signatures, and account references.
@@ -74,13 +74,13 @@ A set of validators working together to maintain the ledger. Main clusters:
 - **testnet**: Validator testing
 
 ### Compute Units (CU)
-A measure of computational resources consumed by a transaction. Default limit is 200,000 CU; maximum is 1,400,000 CU per transaction.
+A measure of computational resources consumed by a transaction. Limits vary by cluster and release (as of `solana-labs/solana`).
 
 ### Cross-Program Invocation (CPI)
 When one program calls another program within a transaction. Enables composability between programs.
 
 ### Epoch
-A period of ~2-3 days during which the leader schedule remains fixed. Stake changes take effect at epoch boundaries.
+A period during which the leader schedule remains fixed. Length is defined by protocol constants and can change by configuration (as of `solana-labs/solana` clock constants).
 
 ### Geyser
 A plugin system for validators that streams account and transaction data in real-time. Used for building indexers and analytics.
@@ -110,7 +110,7 @@ Executable code deployed on Solana (analogous to "smart contract" on other chain
 A special type of address derived from a program ID and seeds that doesn't have a corresponding private key. Used for program-controlled accounts.
 
 ### Rent
-The SOL cost for storing data on-chain. Rent collection is currently disabled on Solana, but accounts still must maintain a minimum rent-exempt balance.
+The SOL cost for storing data on-chain. Accounts must maintain a minimum rent-exempt balance (as of [solana.com/docs](https://solana.com/docs)).
 
 ### Rent Exemption
 When an account holds enough SOL to cover rent indefinitely (minimum balance varies by data size, refunded on close).
@@ -122,7 +122,7 @@ The API interface for interacting with Solana nodes. Used to query state, submit
 Solana's parallel smart contract runtime that enables concurrent transaction processing on multiple cores.
 
 ### Slot
-The period (~400ms) in which a validator can produce a block. Multiple slots may pass between blocks.
+The period (target ~400ms) in which a validator can produce a block. Multiple slots may pass between blocks (as of `solana-labs/solana` clock constants).
 
 ### SOL
 The native cryptocurrency of Solana, used for transaction fees, rent, and staking.
