@@ -56,7 +56,7 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 ---
 
-## New Module Proposal: Stablecoins (Part 2.5 or 3.5)
+## Module: Stablecoins (Part 2.3)
 
 | Question | Coverage |
 |----------|----------|
@@ -69,7 +69,7 @@ This document maps your learning questions to curriculum modules, identifying ga
 | USDT vs USDC differences | Comparison |
 | UST/Luna collapse | Case study |
 
-**Recommendation**: Add as Module 2.3 after Ethereum, before Solana. Stablecoins are chain-agnostic but essential for understanding DeFi.
+**Status**: Included as Module 2.3 after Ethereum, before Solana.
 
 ---
 
@@ -109,14 +109,14 @@ This document maps your learning questions to curriculum modules, identifying ga
 
 ## New Module Proposals Based on Questions
 
-### Module 3.5: Staking & Validator Economics
+### Module 3.5: Staking & Validator Economics (covered)
 - Staking mechanics (per epoch rewards)
 - How to choose where to stake
 - Slashing risks
 - Liquid staking (mSOL, jitoSOL, bSOL)
 - Stake concentration concerns
 
-### Module 3.6: MEV on Solana
+### Module 3.6: MEV on Solana (covered)
 - What is MEV? (supermarket analogy)
 - Frontrunning and sandwich attacks
 - Is arbitrage good or bad?
@@ -145,15 +145,15 @@ Part 1: Why Blockchain Exists (✅ Complete)
 Part 2: The Programmable Era
   2.1 Ethereum: Code on the Blockchain
   2.2 Ethereum's Growing Pains (+ PoS deep dive)
-  2.3 Stablecoins: Digital Dollars (NEW)
+  2.3 Stablecoins: Digital Dollars
 
 Part 3: Enter Solana
   3.1 Solana's Hypothesis
   3.2 How Solana Works (expanded for clients, P2P, genesis)
   3.3 The Solana Account Model
-  3.4 Validators & Economics (NEW - split from 3.2)
-  3.5 Staking Mechanics (NEW)
-  3.6 MEV on Solana (NEW)
+  3.4 Validators & Economics
+  3.5 Staking Mechanics
+  3.6 MEV on Solana
   3.7 Solana vs Competition
 
 Part 4-6: (Engineer track, unchanged)
