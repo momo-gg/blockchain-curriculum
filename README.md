@@ -14,13 +14,13 @@ This curriculum answers **"Why?"** before **"How?"** — building understanding 
 
 ### What Makes This Different
 
-| Traditional Tutorials | This Curriculum |
-|----------------------|-----------------|
-| Jump straight to code | Build conceptual foundation first |
-| Assume blockchain knowledge | Start from trust problem |
-| Single audience | Three audience tracks (General, PM/EM, Engineer) |
-| Scattered resources | Progressive, interconnected modules |
-| Focus on syntax | Focus on mental models |
+| Traditional Tutorials       | This Curriculum                                  |
+| --------------------------- | ------------------------------------------------ |
+| Jump straight to code       | Build conceptual foundation first                |
+| Assume blockchain knowledge | Start from trust problem                         |
+| Single audience             | Three audience tracks (General, PM/EM, Engineer) |
+| Scattered resources         | Progressive, interconnected modules              |
+| Focus on syntax             | Focus on mental models                           |
 
 ---
 
@@ -28,21 +28,21 @@ This curriculum answers **"Why?"** before **"How?"** — building understanding 
 
 ### Choose Your Track
 
-| Track | Time | Who Should Take It | Start Here |
-|-------|------|-------------------|------------|
-| **Fast Track** | 2-3 hours | Executives, stakeholders | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green sections only) |
-| **PM/EM Track** | 6-8 hours | Product & Engineering Managers | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green + yellow sections) |
-| **Engineer Track** | 20-30 hours | Software Engineers | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (all sections + projects) |
+| Track              | Time        | Who Should Take It             | Start Here                                                                                                     |
+| ------------------ | ----------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Fast Track**     | 2-3 hours   | Executives, stakeholders       | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green sections only)     |
+| **PM/EM Track**    | 6-8 hours   | Product & Engineering Managers | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green + yellow sections) |
+| **Engineer Track** | 20-30 hours | Software Engineers             | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (all sections + projects) |
 
 ### Content Markers
 
 Throughout the curriculum, you'll encounter these markers:
 
-| Marker | Meaning |
-|--------|---------|
-| 🟢 | General understanding — for everyone |
-| 🟡 | PM/EM depth — contributor-level knowledge |
-| 🔵 | Engineer depth — builder-level implementation |
+| Marker | Meaning                                       |
+| ------ | --------------------------------------------- |
+| 🟢      | General understanding — for everyone          |
+| 🟡      | PM/EM depth — contributor-level knowledge     |
+| 🔵      | Engineer depth — builder-level implementation |
 
 ---
 
@@ -191,27 +191,26 @@ Track your progress by checking off completed items.
 
 ## Content Conventions
 
-| Symbol | Meaning |
-|--------|---------|
-| 💡 **Key Insight** | Important conceptual understanding |
-| ⚠️ **Warning/Disclaimer** | Critical caveats or data freshness notes |
-| 🔧 **Technical Detail** | Implementation specifics (🔵 Engineer) |
-| 📊 **Business Context** | Strategic implications (🟡 PM/EM) |
-| ✅ **Check Understanding** | Self-assessment questions |
-| > 💡 **ELI5** | "Explain Like I'm 5" simplified analogies |
+| Symbol                    | Meaning                                   |
+| ------------------------- | ----------------------------------------- |
+| 💡 **Key Insight**         | Important conceptual understanding        |
+| ⚠️ **Warning/Disclaimer**  | Critical caveats or data freshness notes  |
+| 🔧 **Technical Detail**    | Implementation specifics (🔵 Engineer)     |
+| 📊 **Business Context**    | Strategic implications (🟡 PM/EM)          |
+| ✅ **Check Understanding** | Self-assessment questions                 |
+| > 💡 **ELI5**              | "Explain Like I'm 5" simplified analogies |
 
 ---
 
 ## Data Freshness
 
-This curriculum was last updated in **January 2025**. Certain metrics evolve rapidly:
+This curriculum was last updated in **January 2026**. Certain metrics evolve rapidly:
 
-| Data Type | Verify At |
-|-----------|-----------|
-| TPS / Performance | [Solana Beach](https://solanabeach.io) |
-| Validator Counts | [Validators.app](https://www.validators.app/) |
-| TVL / Market Data | [DefiLlama](https://defillama.com) |
-| Network Status | [Solana Status](https://status.solana.com) |
+| Data Type         | Verify At                                     |
+| ----------------- | --------------------------------------------- |
+| TPS / Performance | [Solana Beach](https://solanabeach.io)        |
+| Validator Counts  | [Validators.app](https://www.validators.app/) |
+| Network Status    | [Solana Status](https://status.solana.com)    |
 
 Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics.
 
