@@ -316,6 +316,9 @@ An attribute indicating an address has signed to confirm its association with an
 
 ## DeFi Terms
 
+### Arbitrage
+Profiting from price differences across venues or pools.
+
 ### AMM (Automated Market Maker)
 A decentralized exchange mechanism using liquidity pools and mathematical formulas for pricing.
 
@@ -324,6 +327,9 @@ Annualized return including compounding.
 
 ### APR (Annual Percentage Rate)
 Annualized return without compounding.
+
+### Bid-Ask Spread
+The difference between the highest bid and lowest ask price in an order book.
 
 ### Bridge
 A protocol that moves tokens between different blockchains.
@@ -337,14 +343,23 @@ An exchange that executes trades on-chain via smart contracts.
 ### Funding Rate
 Periodic payments between long and short traders that keep perpetual prices aligned.
 
+### Hedge / Hedging
+Reducing exposure by taking an offsetting position.
+
 ### Impermanent Loss
 The loss LPs experience versus holding tokens when prices diverge.
 
 ### Leverage
 Borrowed exposure that amplifies gains and losses.
 
+### Limit Order
+An order to buy or sell at a specified price or better.
+
 ### Liquidation
 Forced position closure when collateral falls below a threshold.
+
+### Liquidity
+How easily an asset can be bought or sold without moving price.
 
 ### Liquidity Pool
 A smart contract holding paired assets for trading. Liquidity providers deposit assets and earn fees.
@@ -355,8 +370,20 @@ A token representing staked assets that remains transferable (e.g., mSOL).
 ### Margin
 Collateral posted to open or maintain a leveraged position.
 
+### Market Order
+An order to buy or sell immediately at the best available price.
+
+### Open Interest
+Total number of outstanding derivative contracts for a market.
+
 ### Order Book
 A list of buy and sell orders with prices and sizes, typical of CEXs.
+
+### Perp (Perpetual Futures)
+Derivative contracts with no expiry that track a spot price.
+
+### Position
+An open trade or exposure held by a trader.
 
 ### Oracle
 A service providing external data (prices, randomness) to on-chain programs.
@@ -367,6 +394,9 @@ How much a trade moves the price due to limited liquidity.
 ### Slippage
 The difference between expected and actual price due to market movement or insufficient liquidity.
 
+### Stop Loss
+An order that closes a position if price reaches a defined level.
+
 ### Swap
 Exchanging one token for another through a DEX or AMM.
 
@@ -376,6 +406,13 @@ An average price over time, used to reduce manipulation risk.
 ### TVL (Total Value Locked)
 The total value of assets deposited in a DeFi protocol. A common metric for protocol size.
 
+### Volatility
+The degree of price variation over time. Higher volatility means larger swings.
+
+### Yield
+Return on deposited assets, usually expressed as APY (Annual Percentage Yield).
+
+
 ---
 
 ## Quick Cross-References
@@ -384,9 +421,6 @@ The total value of assets deposited in a DeFi protocol. A common metric for prot
 - MEV terms → `curriculum/part-3-enter-solana/3.6-mev-on-solana.md`
 - Transaction states → `curriculum/part-5-client-development/5.3-transaction-building.md`
 - Oracle terms → `curriculum/part-6-infrastructure/6.7-oracles-data-feeds.md`
-
-### Yield
-Return on deposited assets, usually expressed as APY (Annual Percentage Yield).
 
 ---
 
