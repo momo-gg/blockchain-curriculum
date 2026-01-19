@@ -72,6 +72,7 @@ Each module contains sections for all tracks. Read the sections relevant to your
 - [5.4 Wallet Integration](./part-5-client-development/5.4-wallet-integration.md)
 - [5.5 Frontend Frameworks](./part-5-client-development/5.5-frontend-frameworks.md)
 - [5.6 Real-Time Data & WebSockets](./part-5-client-development/5.6-realtime-websockets.md)
+- [5.7 User Experience & Transaction Friction](./part-5-client-development/5.7-user-experience-friction.md)
 
 ### Part 6: Infrastructure & Production 🔵
 *Running and scaling Solana infrastructure*
