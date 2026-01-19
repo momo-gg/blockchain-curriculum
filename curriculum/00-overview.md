@@ -82,6 +82,7 @@ Each module contains sections for all tracks. Read the sections relevant to your
 - [6.4 Monitoring & Observability](./part-6-infrastructure/6.4-monitoring-observability.md)
 - [6.5 Security Best Practices](./part-6-infrastructure/6.5-security-practices.md)
 - [6.6 Production Considerations](./part-6-infrastructure/6.6-production-considerations.md)
+- [6.7 Oracles & Data Feeds](./part-6-infrastructure/6.7-oracles-data-feeds.md)
 
 ### Appendices
 *Reference materials*
