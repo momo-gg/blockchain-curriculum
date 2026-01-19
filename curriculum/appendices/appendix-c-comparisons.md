@@ -22,6 +22,18 @@ High-level comparisons only. For current metrics, use the source links below (as
 
 ---
 
+## Decision Lens (Conceptual)
+
+| Lens | What to Ask |
+|------|-------------|
+| Latency | Do users need near real-time feedback? |
+| Composability | Do contracts need to interact in one atomic environment? |
+| Cost Predictability | Are stable fees required for business models? |
+| Security Posture | Is the track record and client diversity sufficient? |
+| Developer Fit | Is the team stronger in Rust or Solidity? |
+
+---
+
 ## Sources for Current Metrics
 
 - Solana performance and validator stats (as of [Solana Beach](https://solanabeach.io) and [Validators.app](https://www.validators.app/))
@@ -29,4 +41,3 @@ High-level comparisons only. For current metrics, use the source links below (as
 - Solana validator requirements (as of [docs.anza.xyz/operations/requirements](https://docs.anza.xyz/operations/requirements))
 - Ethereum and L2 metrics (as of [l2beat.com](https://l2beat.com))
 - DeFi and TVL metrics (as of [defillama.com](https://defillama.com))
-

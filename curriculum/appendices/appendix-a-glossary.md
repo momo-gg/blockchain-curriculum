@@ -376,6 +376,15 @@ An average price over time, used to reduce manipulation risk.
 ### TVL (Total Value Locked)
 The total value of assets deposited in a DeFi protocol. A common metric for protocol size.
 
+---
+
+## Quick Cross-References
+
+- Staking terms → `curriculum/part-3-enter-solana/3.5-staking-mechanics.md`
+- MEV terms → `curriculum/part-3-enter-solana/3.6-mev-on-solana.md`
+- Transaction states → `curriculum/part-5-client-development/5.3-transaction-building.md`
+- Oracle terms → `curriculum/part-6-infrastructure/6.7-oracles-data-feeds.md`
+
 ### Yield
 Return on deposited assets, usually expressed as APY (Annual Percentage Yield).
 
