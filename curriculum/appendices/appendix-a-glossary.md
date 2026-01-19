@@ -12,6 +12,9 @@ An addressable storage unit on Solana that can hold data and SOL. Every piece of
 ### Address
 A 32-byte public key encoded in Base58. Used to identify accounts, programs, and wallets on the network. Example: `11111111111111111111111111111111`
 
+### Airdrop
+Tokens distributed to wallet addresses for marketing, rewards, or community growth.
+
 ### Block
 A collection of transactions processed together and added to the blockchain. On Solana, block timing is derived from slot timing and can vary (as of `solana-labs/solana` clock constants).
 
@@ -217,6 +220,21 @@ A protocol for real-time bidirectional communication. Used for account subscript
 
 ## Security Terms
 
+### Custodial
+A model where a third party holds the private keys on the user's behalf.
+
+### Non-Custodial
+A model where the user controls the private keys directly.
+
+### Private Key
+The secret key that authorizes transactions. Anyone who has it controls the account.
+
+### Public Key
+The shareable key used to derive an address and verify signatures.
+
+### Seed Phrase
+A 12-24 word backup that can regenerate all keys in a wallet.
+
 ### Authority
 An account with special permissions over a resource (mint authority, freeze authority, upgrade authority).
 
@@ -301,17 +319,59 @@ An attribute indicating an address has signed to confirm its association with an
 ### AMM (Automated Market Maker)
 A decentralized exchange mechanism using liquidity pools and mathematical formulas for pricing.
 
+### APY (Annual Percentage Yield)
+Annualized return including compounding.
+
+### APR (Annual Percentage Rate)
+Annualized return without compounding.
+
+### Bridge
+A protocol that moves tokens between different blockchains.
+
+### CEX (Centralized Exchange)
+An exchange run by a company that holds user funds and manages order books.
+
+### DEX (Decentralized Exchange)
+An exchange that executes trades on-chain via smart contracts.
+
+### Funding Rate
+Periodic payments between long and short traders that keep perpetual prices aligned.
+
+### Impermanent Loss
+The loss LPs experience versus holding tokens when prices diverge.
+
+### Leverage
+Borrowed exposure that amplifies gains and losses.
+
+### Liquidation
+Forced position closure when collateral falls below a threshold.
+
 ### Liquidity Pool
 A smart contract holding paired assets for trading. Liquidity providers deposit assets and earn fees.
 
+### LST (Liquid Staking Token)
+A token representing staked assets that remains transferable (e.g., mSOL).
+
+### Margin
+Collateral posted to open or maintain a leveraged position.
+
+### Order Book
+A list of buy and sell orders with prices and sizes, typical of CEXs.
+
 ### Oracle
 A service providing external data (prices, randomness) to on-chain programs.
+
+### Price Impact
+How much a trade moves the price due to limited liquidity.
 
 ### Slippage
 The difference between expected and actual price due to market movement or insufficient liquidity.
 
 ### Swap
 Exchanging one token for another through a DEX or AMM.
+
+### TWAP (Time-Weighted Average Price)
+An average price over time, used to reduce manipulation risk.
 
 ### TVL (Total Value Locked)
 The total value of assets deposited in a DeFi protocol. A common metric for protocol size.
