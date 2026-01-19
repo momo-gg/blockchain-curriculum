@@ -41,6 +41,21 @@ A curated collection of resources for continued learning and development on Sola
    - [buildspace Solana](https://buildspace.so)
    - [Solana Cookbook](https://solanacookbook.com)
 
+---
+
+## By Audience
+
+### PM/EM Track
+- [Solana Docs (Conceptual)](https://solana.com/docs)
+- [Solana Status](https://status.solana.com)
+- [L2Beat](https://l2beat.com)
+- [DefiLlama](https://defillama.com)
+
+### Engineer Track
+- [Anchor Book](https://book.anchor-lang.com)
+- [Solana Program Library](https://github.com/solana-labs/solana-program-library)
+- [Sealevel Attacks](https://github.com/coral-xyz/sealevel-attacks)
+
 ### Intermediate Path
 
 1. **Anchor Development**

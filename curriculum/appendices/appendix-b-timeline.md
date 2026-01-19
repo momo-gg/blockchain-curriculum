@@ -24,6 +24,17 @@ A concise, source-first timeline. Use the references below for exact dates, amou
 
 ---
 
+## Anchor Milestones (No Exact Dates)
+
+- Bitcoin whitepaper and genesis launch
+- Ethereum mainnet launch and early DeFi
+- Solana mainnet beta launch
+- Rise of NFTs as a consumer on-chain use case
+- Multiple validator clients (Agave + Firedancer)
+- Ongoing reliability upgrades and incident response processes
+
+---
+
 ## Primary Sources (Use These for Exact Dates and Figures)
 
 - Solana news and updates (as of [solana.com/news](https://solana.com/news))
@@ -32,4 +43,3 @@ A concise, source-first timeline. Use the references below for exact dates, amou
 - Agave/Anza documentation (as of [docs.anza.xyz](https://docs.anza.xyz))
 - Solana status and incidents (as of [status.solana.com](https://status.solana.com))
 - Solana ecosystem data (as of [Solana Beach](https://solanabeach.io) and [Validators.app](https://www.validators.app/))
-

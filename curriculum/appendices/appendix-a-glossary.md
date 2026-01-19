@@ -412,6 +412,16 @@ The degree of price variation over time. Higher volatility means larger swings.
 ### Yield
 Return on deposited assets, usually expressed as APY (Annual Percentage Yield).
 
+
+---
+
+## Quick Cross-References
+
+- Staking terms → `curriculum/part-3-enter-solana/3.5-staking-mechanics.md`
+- MEV terms → `curriculum/part-3-enter-solana/3.6-mev-on-solana.md`
+- Transaction states → `curriculum/part-5-client-development/5.3-transaction-building.md`
+- Oracle terms → `curriculum/part-6-infrastructure/6.7-oracles-data-feeds.md`
+
 ---
 
 ## Additional Resources
