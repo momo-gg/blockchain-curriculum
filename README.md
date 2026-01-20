@@ -30,9 +30,9 @@ This curriculum answers **"Why?"** before **"How?"** — building understanding 
 
 | Track              | Time        | Who Should Take It             | Start Here                                                                                                     |
 | ------------------ | ----------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Fast Track**     | 2-3 hours   | Executives, stakeholders       | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green sections only)     |
-| **PM/EM Track**    | 6-8 hours   | Product & Engineering Managers | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green + yellow sections) |
-| **Engineer Track** | 20-30 hours | Software Engineers             | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (all sections + projects) |
+| **Fast Track**     | 2-3 hours   | Executives, stakeholders       | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (green sections only)     |
+| **PM/EM Track**    | 6-8 hours   | Product & Engineering Managers | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (green + yellow sections) |
+| **Engineer Track** | 20-30 hours | Software Engineers             | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (all sections + projects) |
 
 ### Content Markers
 
@@ -46,11 +46,28 @@ Throughout the curriculum, you'll encounter these markers:
 
 ---
 
-## Curriculum Structure
+## Project Structure
+
+Two content sources are maintained:
+- `src/content/docs/` powers the Starlight documentation site.
+- `curriculum/` remains the canonical curriculum map for GitHub/Notion reading and sequencing.
+
+Keep the module order and titles in sync between these directories when you change structure.
 
 ```
+src/content/docs/
+├── index.mdx                      # Site landing page (Overview)
+├── curriculum-overview/           # Full curriculum guide
+├── part-1/                        # Part 1: Why Blockchain
+├── part-2/                        # Part 2: Programmable Blockchain
+├── part-3/                        # Part 3: Enter Solana
+├── part-4/                        # Part 4: Building Programs
+├── part-5/                        # Part 5: Client Development
+├── part-6/                        # Part 6: Infrastructure
+└── appendices/                    # Reference materials
+
 curriculum/
-├── 00-overview.md                 # Detailed curriculum guide
+├── 00-overview.md                 # Canonical curriculum map
 │
 ├── part-1-why-blockchain/         # Foundation: The problems blockchain solves
 │   ├── 1.1-the-trust-problem.md
@@ -106,6 +123,8 @@ curriculum/
     └── appendix-d-resources.md
 ```
 
+Starlight slugs remove dots from filenames, so `1.1-the-trust-problem.md` is published at `/part-1/11-the-trust-problem/`.
+
 ---
 
 ## Learning Paths
@@ -151,11 +170,56 @@ You'll be able to:
 
 ---
 
+## Documentation Site
+
+This repository uses [Starlight](https://starlight.astro.build/) with the [Obsidian theme](https://fevol.github.io/starlight-theme-obsidian/) to render `src/content/docs/` as a documentation site.
+
+### Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+### Editing Docs
+
+- Edit files in `src/content/docs/`.
+- Frontmatter is required on each page:
+
+```markdown
+---
+title: "Your Page Title"
+description: "Brief description of the content"
+---
+```
+
+- Update the `sidebar` in `astro.config.mjs` when adding or reordering pages.
+
+### Styling
+
+Custom styles live in `src/styles/custom.css`.
+
+### Deployment
+
+Pushing to `main` triggers GitHub Actions and deploys to GitHub Pages.
+
+### Troubleshooting
+
+- **Build fails**: `rm -rf node_modules package-lock.json dist .astro && npm install && npm run dev`
+- **Duplicate content IDs**: `npm run dev -- --force` (clears the content cache)
+- **Broken links**: ensure dotless slugs in URLs (e.g., `/part-1/11-the-trust-problem/`)
+
+---
+
 ## How to Use This Curriculum
 
 ### Reading on GitHub
 
-Each module is a self-contained Markdown file. Navigate using the links at the bottom of each module ("Next" sections) or use the directory structure above.
+Each module is a self-contained Markdown file in `curriculum/`. Use `curriculum/00-overview.md` as the canonical map.
+
+### Reading on the Docs Site
+
+Navigate with the Starlight sidebar and built-in pagination. The site publishes dotless slugs (e.g., `/part-1/11-the-trust-problem/`).
 
 ### Migrating to Notion
 
@@ -298,6 +362,6 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 
 **Ready to begin?**
 
-→ **[Start with 1.1: The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md)**
+→ **[Start with 1.1: The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/)**
 
-Or jump to the **[Full Curriculum Overview](./curriculum/00-overview.md)** for detailed navigation.
+Or jump to the **[Full Curriculum Overview](https://solflare-wallet.github.io/curriculum-overview/)** for detailed navigation.
