@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightObsidian from 'starlight-theme-obsidian';
+import rehypeMermaid from 'rehype-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,9 @@ export default defineConfig({
 		starlight({
 			title: 'Solana Onboarding Curriculum',
 			description: 'A comprehensive learning guide for understanding blockchain technology and Solana — from first principles to production deployment.',
+			markdown: {
+				rehypePlugins: [rehypeMermaid],
+			},
 			social: [
 				{
 					label: 'GitHub',
@@ -28,7 +32,16 @@ export default defineConfig({
 							markdownLinks: true,
 							wikiLinks: true,
 						}
-					}
+					},
+					graphConfig: {
+						depth: -1,
+						depthDirection: 'both',
+					},
+					sitemapConfig: {
+						contentRoot: './src/content/docs',
+						pageInclusionRules: ['**/*.md', '**/*.mdx'],
+						linkInclusionRules: ['**/*'],
+					},
 				}),
 			],
 			sidebar: [

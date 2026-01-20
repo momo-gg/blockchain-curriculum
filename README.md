@@ -40,15 +40,16 @@ Throughout the curriculum, you'll encounter these markers:
 
 | Marker | Meaning                                       |
 | ------ | --------------------------------------------- |
-| 🟢      | General understanding — for everyone          |
-| 🟡      | PM/EM depth — contributor-level knowledge     |
-| 🔵      | Engineer depth — builder-level implementation |
+| 🟢     | General understanding — for everyone          |
+| 🟡     | PM/EM depth — contributor-level knowledge     |
+| 🔵     | Engineer depth — builder-level implementation |
 
 ---
 
 ## Project Structure
 
 Two content sources are maintained:
+
 - `src/content/docs/` powers the Starlight documentation site.
 - `curriculum/` remains the canonical curriculum map for GitHub/Notion reading and sequencing.
 
@@ -130,6 +131,7 @@ Starlight slugs remove dots from filenames, so `1.1-the-trust-problem.md` is pub
 ## Learning Paths
 
 ### Path 1: Fast Track (Executive Understanding)
+
 **Time: 2-3 hours** | **Audience: Leadership, Stakeholders**
 
 ```
@@ -137,12 +139,14 @@ Starlight slugs remove dots from filenames, so `1.1-the-trust-problem.md` is pub
 ```
 
 Read only 🟢 **General** sections. You'll understand:
+
 - Why blockchain technology exists
 - What problems it solves
 - How Solana differs from competitors
 - Key terminology for informed conversations
 
 ### Path 2: PM/EM Track (Contributor Understanding)
+
 **Time: 6-8 hours** | **Audience: Product & Engineering Managers**
 
 ```
@@ -150,12 +154,14 @@ Parts 1-3 Complete (🟢 + 🟡 sections)
 ```
 
 You'll be able to:
+
 - Evaluate technical proposals and trade-offs
 - Debug high-level architectural issues
 - Review PRs and design documents
 - Communicate effectively with engineers
 
 ### Path 3: Engineer Track (Builder Understanding)
+
 **Time: 20-30 hours** | **Audience: Software Engineers**
 
 ```
@@ -163,6 +169,7 @@ Parts 1-6 Complete (all sections + mini-projects)
 ```
 
 You'll be able to:
+
 - Write production Solana programs
 - Build full-stack dApps
 - Deploy and monitor infrastructure
@@ -188,12 +195,13 @@ npm run dev
 
 ```markdown
 ---
-title: "Your Page Title"
-description: "Brief description of the content"
+title: 'Your Page Title'
+description: 'Brief description of the content'
 ---
 ```
 
 - Update the `sidebar` in `astro.config.mjs` when adding or reordering pages.
+- Mermaid diagrams are supported via ```mermaid``` fences.
 
 ### Styling
 
@@ -238,6 +246,7 @@ This curriculum is designed for easy Notion import:
 5. Callouts (blockquotes) become Notion callouts
 
 **Recommended Notion Structure:**
+
 ```
 Solana Curriculum (Database)
 ├── Part 1: Why Blockchain (Page)
@@ -251,6 +260,7 @@ Solana Curriculum (Database)
 ### Self-Assessment
 
 Each module ends with **"Check Your Understanding"** sections containing:
+
 - [ ] Conceptual questions
 - [ ] Practical exercises
 - [ ] Discussion prompts
@@ -261,12 +271,12 @@ Track your progress by checking off completed items.
 
 ## Content Conventions
 
-| Symbol                    | Meaning                                   |
-| ------------------------- | ----------------------------------------- |
+| Symbol                     | Meaning                                   |
+| -------------------------- | ----------------------------------------- |
 | 💡 **Key Insight**         | Important conceptual understanding        |
 | ⚠️ **Warning/Disclaimer**  | Critical caveats or data freshness notes  |
-| 🔧 **Technical Detail**    | Implementation specifics (🔵 Engineer)     |
-| 📊 **Business Context**    | Strategic implications (🟡 PM/EM)          |
+| 🔧 **Technical Detail**    | Implementation specifics (🔵 Engineer)    |
+| 📊 **Business Context**    | Strategic implications (🟡 PM/EM)         |
 | ✅ **Check Understanding** | Self-assessment questions                 |
 | > 💡 **ELI5**              | "Explain Like I'm 5" simplified analogies |
 
@@ -289,10 +299,12 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 ## Prerequisites
 
 ### For General/PM Track
+
 - Basic understanding of software and the internet
 - No coding experience required
 
 ### For Engineer Track
+
 - Proficiency in at least one programming language
 - Comfort with command-line tools
 - Basic understanding of web development
@@ -303,12 +315,14 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 ## Contributing
 
 ### Reporting Issues
+
 - Outdated information
 - Broken links
 - Unclear explanations
 - Missing topics
 
 ### Suggesting Improvements
+
 - Additional ELI5 explanations
 - New mini-projects
 - Updated code examples
