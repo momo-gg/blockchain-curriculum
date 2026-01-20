@@ -1,0 +1,32 @@
+{
+  "name": "solana-onboarding-docs",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.37.3",
+    "@fontsource-variable/instrument-sans": "^5.2.8",
+    "@fontsource/ibm-plex-serif": "^5.2.7",
+    "astro": "^5.6.1",
+    "astro-d2": "^0.8.1",
+    "sharp": "^0.34.2",
+    "starlight-theme-obsidian": "^0.4.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-astro": "^1.4.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1"
+  }
+}

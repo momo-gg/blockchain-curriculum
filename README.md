@@ -28,11 +28,11 @@ This curriculum answers **"Why?"** before **"How?"** — building understanding 
 
 ### Choose Your Track
 
-| Track              | Time        | Who Should Take It             | Start Here                                                                                                     |
-| ------------------ | ----------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Fast Track**     | 2-3 hours   | Executives, stakeholders       | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green sections only)     |
-| **PM/EM Track**    | 6-8 hours   | Product & Engineering Managers | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (green + yellow sections) |
-| **Engineer Track** | 20-30 hours | Software Engineers             | [1.1 The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md) (all sections + projects) |
+| Track              | Time        | Who Should Take It             | Start Here                                                                                                        |
+| ------------------ | ----------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| **Fast Track**     | 2-3 hours   | Executives, stakeholders       | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (green sections only)     |
+| **PM/EM Track**    | 6-8 hours   | Product & Engineering Managers | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (green + yellow sections) |
+| **Engineer Track** | 20-30 hours | Software Engineers             | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (all sections + projects) |
 
 ### Content Markers
 
@@ -40,17 +40,35 @@ Throughout the curriculum, you'll encounter these markers:
 
 | Marker | Meaning                                       |
 | ------ | --------------------------------------------- |
-| 🟢      | General understanding — for everyone          |
-| 🟡      | PM/EM depth — contributor-level knowledge     |
-| 🔵      | Engineer depth — builder-level implementation |
+| 🟢     | General understanding — for everyone          |
+| 🟡     | PM/EM depth — contributor-level knowledge     |
+| 🔵     | Engineer depth — builder-level implementation |
 
 ---
 
-## Curriculum Structure
+## Project Structure
+
+Two content sources are maintained:
+
+- `src/content/docs/` powers the Starlight documentation site.
+- `curriculum/` remains the canonical curriculum map for GitHub/Notion reading and sequencing.
+
+Keep the module order and titles in sync between these directories when you change structure.
 
 ```
+src/content/docs/
+├── index.mdx                      # Site landing page (Overview)
+├── curriculum-overview/           # Full curriculum guide
+├── part-1/                        # Part 1: Why Blockchain
+├── part-2/                        # Part 2: Programmable Blockchain
+├── part-3/                        # Part 3: Enter Solana
+├── part-4/                        # Part 4: Building Programs
+├── part-5/                        # Part 5: Client Development
+├── part-6/                        # Part 6: Infrastructure
+└── appendices/                    # Reference materials
+
 curriculum/
-├── 00-overview.md                 # Detailed curriculum guide
+├── 00-overview.md                 # Canonical curriculum map
 │
 ├── part-1-why-blockchain/         # Foundation: The problems blockchain solves
 │   ├── 1.1-the-trust-problem.md
@@ -106,11 +124,14 @@ curriculum/
     └── appendix-d-resources.md
 ```
 
+Starlight slugs remove dots from filenames, so `1.1-the-trust-problem.md` is published at `/part-1/11-the-trust-problem/`.
+
 ---
 
 ## Learning Paths
 
 ### Path 1: Fast Track (Executive Understanding)
+
 **Time: 2-3 hours** | **Audience: Leadership, Stakeholders**
 
 ```
@@ -118,12 +139,14 @@ curriculum/
 ```
 
 Read only 🟢 **General** sections. You'll understand:
+
 - Why blockchain technology exists
 - What problems it solves
 - How Solana differs from competitors
 - Key terminology for informed conversations
 
 ### Path 2: PM/EM Track (Contributor Understanding)
+
 **Time: 6-8 hours** | **Audience: Product & Engineering Managers**
 
 ```
@@ -131,12 +154,14 @@ Parts 1-3 Complete (🟢 + 🟡 sections)
 ```
 
 You'll be able to:
+
 - Evaluate technical proposals and trade-offs
 - Debug high-level architectural issues
 - Review PRs and design documents
 - Communicate effectively with engineers
 
 ### Path 3: Engineer Track (Builder Understanding)
+
 **Time: 20-30 hours** | **Audience: Software Engineers**
 
 ```
@@ -144,6 +169,7 @@ Parts 1-6 Complete (all sections + mini-projects)
 ```
 
 You'll be able to:
+
 - Write production Solana programs
 - Build full-stack dApps
 - Deploy and monitor infrastructure
@@ -151,11 +177,63 @@ You'll be able to:
 
 ---
 
+## Documentation Site
+
+This repository uses [Starlight](https://starlight.astro.build/) with the [Obsidian theme](https://fevol.github.io/starlight-theme-obsidian/) to render `src/content/docs/` as a documentation site.
+
+### Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+### Editing Docs
+
+- Edit files in `src/content/docs/`.
+- Frontmatter is required on each page:
+
+```markdown
+---
+title: 'Your Page Title'
+description: 'Brief description of the content'
+---
+```
+
+- Update the `sidebar` in `astro.config.mjs` when adding or reordering pages.
+- D2 diagrams are supported via ```d2``` fences (rendered by `astro-d2`). Install the D2 binary or set `ASTRO_D2_SKIP=1` to skip generation.
+
+### Styling
+
+Custom styles live in `src/styles/custom.css`.
+
+### Deployment
+
+Pushing to `main` triggers GitHub Actions and deploys to GitHub Pages.
+
+### Troubleshooting
+
+- **Build fails**: `rm -rf node_modules package-lock.json dist .astro && npm install && npm run dev`
+- **Duplicate content IDs**: `npm run dev -- --force` (clears the content cache)
+- **Broken links**: ensure dotless slugs in URLs (e.g., `/part-1/11-the-trust-problem/`)
+
+### Linting and Formatting
+
+- `npm run lint` checks ESLint rules.
+- `npm run format` applies Prettier formatting.
+- `npm run format:check` verifies Prettier formatting.
+
+---
+
 ## How to Use This Curriculum
 
 ### Reading on GitHub
 
-Each module is a self-contained Markdown file. Navigate using the links at the bottom of each module ("Next" sections) or use the directory structure above.
+Each module is a self-contained Markdown file in `curriculum/`. Use `curriculum/00-overview.md` as the canonical map.
+
+### Reading on the Docs Site
+
+Navigate with the Starlight sidebar and built-in pagination. The site publishes dotless slugs (e.g., `/part-1/11-the-trust-problem/`).
 
 ### Migrating to Notion
 
@@ -168,6 +246,7 @@ This curriculum is designed for easy Notion import:
 5. Callouts (blockquotes) become Notion callouts
 
 **Recommended Notion Structure:**
+
 ```
 Solana Curriculum (Database)
 ├── Part 1: Why Blockchain (Page)
@@ -181,6 +260,7 @@ Solana Curriculum (Database)
 ### Self-Assessment
 
 Each module ends with **"Check Your Understanding"** sections containing:
+
 - [ ] Conceptual questions
 - [ ] Practical exercises
 - [ ] Discussion prompts
@@ -191,12 +271,12 @@ Track your progress by checking off completed items.
 
 ## Content Conventions
 
-| Symbol                    | Meaning                                   |
-| ------------------------- | ----------------------------------------- |
+| Symbol                     | Meaning                                   |
+| -------------------------- | ----------------------------------------- |
 | 💡 **Key Insight**         | Important conceptual understanding        |
 | ⚠️ **Warning/Disclaimer**  | Critical caveats or data freshness notes  |
-| 🔧 **Technical Detail**    | Implementation specifics (🔵 Engineer)     |
-| 📊 **Business Context**    | Strategic implications (🟡 PM/EM)          |
+| 🔧 **Technical Detail**    | Implementation specifics (🔵 Engineer)    |
+| 📊 **Business Context**    | Strategic implications (🟡 PM/EM)         |
 | ✅ **Check Understanding** | Self-assessment questions                 |
 | > 💡 **ELI5**              | "Explain Like I'm 5" simplified analogies |
 
@@ -219,10 +299,12 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 ## Prerequisites
 
 ### For General/PM Track
+
 - Basic understanding of software and the internet
 - No coding experience required
 
 ### For Engineer Track
+
 - Proficiency in at least one programming language
 - Comfort with command-line tools
 - Basic understanding of web development
@@ -233,12 +315,14 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 ## Contributing
 
 ### Reporting Issues
+
 - Outdated information
 - Broken links
 - Unclear explanations
 - Missing topics
 
 ### Suggesting Improvements
+
 - Additional ELI5 explanations
 - New mini-projects
 - Updated code examples
@@ -298,22 +382,6 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 
 **Ready to begin?**
 
-→ **[Start with 1.1: The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md)**
+→ **[Start with 1.1: The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/)**
 
-Or jump to the **[Full Curriculum Overview](./curriculum/00-overview.md)** for detailed navigation.
-
----
-
-## License
-
-Internal use only. Contact repository maintainers for distribution questions.
-
----
-
-<div align="center">
-
-**Built with care for learners at all levels.**
-
-*From trust problems to production deployments — one module at a time.*
-
-</div>
+Or jump to the **[Full Curriculum Overview](https://solflare-wallet.github.io/curriculum-overview/)** for detailed navigation.
