@@ -301,19 +301,3 @@ Look for ⚠️ **Data Disclaimer** callouts in modules with volatile statistics
 → **[Start with 1.1: The Trust Problem](./curriculum/part-1-why-blockchain/1.1-the-trust-problem.md)**
 
 Or jump to the **[Full Curriculum Overview](./curriculum/00-overview.md)** for detailed navigation.
-
----
-
-## License
-
-Internal use only. Contact repository maintainers for distribution questions.
-
----
-
-<div align="center">
-
-**Built with care for learners at all levels.**
-
-*From trust problems to production deployments — one module at a time.*
-
-</div>

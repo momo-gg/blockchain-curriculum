@@ -92,7 +92,7 @@ Example:
 {
   label: 'Part 1: Why Blockchain Exists',
   items: [
-    { label: '1.1 The Trust Problem', link: '/part-1/1.1-the-trust-problem/' },
+    { label: '1.1 The Trust Problem', link: '/part-1/11-the-trust-problem/' },
     { label: 'Your New Page', link: '/part-1/new-page/' }, // Add here
   ],
 },
@@ -166,9 +166,19 @@ npm run build
 
 ### Links Not Working
 
-- Ensure internal links match the content slug format (e.g., `/part-1/1.1-the-trust-problem/`)
+- Ensure internal links match the content slug format (e.g., `/part-1/11-the-trust-problem/`)
 - Use trailing slashes for internal links to avoid double-redirects
 - Prefer relative links within markdown: `[Link Text](../other-page/)`
+
+### Duplicate Content ID Warnings
+
+If you see warnings like `Duplicate id "part-1/11-the-trust-problem"` during `npm run dev`, clear the content cache and restart:
+
+```bash
+npm run dev -- --force
+```
+
+You can also remove `.astro/` and run `npm run dev` again.
 
 ### Styles Not Applying
 

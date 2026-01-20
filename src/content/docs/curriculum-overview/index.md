@@ -30,63 +30,63 @@ Each module contains sections for all tracks. Read the sections relevant to your
 ### Part 1: Why Blockchain Exists
 *Understanding the problems that created the need*
 
-- [1.1 The Trust Problem](/part-1/1.1-the-trust-problem/)
-- [1.2 Bitcoin: The First Solution](/part-1/1.2-bitcoin-the-first-solution/)
-- [1.3 Bitcoin's Limitations](/part-1/1.3-bitcoins-limitations/)
+- [1.1 The Trust Problem](/part-1/11-the-trust-problem/)
+- [1.2 Bitcoin: The First Solution](/part-1/12-bitcoin-the-first-solution/)
+- [1.3 Bitcoin's Limitations](/part-1/13-bitcoins-limitations/)
 
 ### Part 2: The Programmable Blockchain Era
 *From digital cash to programmable money*
 
-- [2.1 Ethereum: Code on the Blockchain](/part-2/2.1-ethereum-code-on-blockchain/)
-- [2.2 Ethereum's Growing Pains](/part-2/2.2-ethereums-growing-pains/)
-- [2.3 Stablecoins: Digital Dollars](/part-2/2.3-stablecoins/)
+- [2.1 Ethereum: Code on the Blockchain](/part-2/21-ethereum-code-on-blockchain/)
+- [2.2 Ethereum's Growing Pains](/part-2/22-ethereums-growing-pains/)
+- [2.3 Stablecoins: Digital Dollars](/part-2/23-stablecoins/)
 
 ### Part 3: Enter Solana
 *A new approach to blockchain scalability*
 
-- [3.1 Solana's Hypothesis](/part-3/3.1-solanas-hypothesis/)
-- [3.2 How Solana Works](/part-3/3.2-how-solana-works/)
-- [3.3 The Solana Account Model](/part-3/3.3-solana-account-model/)
-- [3.4 Validators & Network Architecture](/part-3/3.4-validators-network/)
-- [3.5 Staking Mechanics](/part-3/3.5-staking-mechanics/)
-- [3.6 MEV on Solana](/part-3/3.6-mev-on-solana/)
-- [3.7 Solana vs. The Competition](/part-3/3.7-solana-vs-competition/)
+- [3.1 Solana's Hypothesis](/part-3/31-solanas-hypothesis/)
+- [3.2 How Solana Works](/part-3/32-how-solana-works/)
+- [3.3 The Solana Account Model](/part-3/33-solana-account-model/)
+- [3.4 Validators & Network Architecture](/part-3/34-validators-network/)
+- [3.5 Staking Mechanics](/part-3/35-staking-mechanics/)
+- [3.6 MEV on Solana](/part-3/36-mev-on-solana/)
+- [3.7 Solana vs. The Competition](/part-3/37-solana-vs-competition/)
 
 ### Part 4: Building Programs on Solana 🔵
 *Writing on-chain programs*
 
-- [4.1 Development Environment Setup](/part-4/4.1-dev-environment-setup/)
-- [4.2 Your First Solana Program](/part-4/4.2-first-solana-program/)
-- [4.3 Deep Dive: Accounts & PDAs](/part-4/4.3-accounts-and-pdas/)
-- [4.4 Cross-Program Invocations (CPIs)](/part-4/4.4-cross-program-invocations/)
-- [4.5 Tokens: SPL Token Program](/part-4/4.5-spl-token-program/)
-- [4.6 NFTs & Metaplex](/part-4/4.6-nfts-metaplex/)
-- [4.7 Token Extensions (Token-2022)](/part-4/4.7-token-extensions/)
-- [4.8 Testing Strategies](/part-4/4.8-testing-strategies/)
-- [4.9 Security & Common Vulnerabilities](/part-4/4.9-security-vulnerabilities/)
-- [4.10 Program Optimization](/part-4/4.10-program-optimization/)
+- [4.1 Development Environment Setup](/part-4/41-dev-environment-setup/)
+- [4.2 Your First Solana Program](/part-4/42-first-solana-program/)
+- [4.3 Deep Dive: Accounts & PDAs](/part-4/43-accounts-and-pdas/)
+- [4.4 Cross-Program Invocations (CPIs)](/part-4/44-cross-program-invocations/)
+- [4.5 Tokens: SPL Token Program](/part-4/45-spl-token-program/)
+- [4.6 NFTs & Metaplex](/part-4/46-nfts-metaplex/)
+- [4.7 Token Extensions (Token-2022)](/part-4/47-token-extensions/)
+- [4.8 Testing Strategies](/part-4/48-testing-strategies/)
+- [4.9 Security & Common Vulnerabilities](/part-4/49-security-vulnerabilities/)
+- [4.10 Program Optimization](/part-4/410-program-optimization/)
 
 ### Part 5: Client-Side Development 🔵
 *Building applications that interact with Solana*
 
-- [5.1 Client Architectures](/part-5/5.1-client-architectures/)
-- [5.2 @solana/web3.js Deep Dive](/part-5/5.2-web3js-deep-dive/)
-- [5.3 Transaction Building](/part-5/5.3-transaction-building/)
-- [5.4 Wallet Integration](/part-5/5.4-wallet-integration/)
-- [5.5 Frontend Frameworks](/part-5/5.5-frontend-frameworks/)
-- [5.6 Real-Time Data & WebSockets](/part-5/5.6-realtime-websockets/)
-- [5.7 User Experience & Transaction Friction](/part-5/5.7-user-experience-friction/)
+- [5.1 Client Architectures](/part-5/51-client-architectures/)
+- [5.2 @solana/web3.js Deep Dive](/part-5/52-web3js-deep-dive/)
+- [5.3 Transaction Building](/part-5/53-transaction-building/)
+- [5.4 Wallet Integration](/part-5/54-wallet-integration/)
+- [5.5 Frontend Frameworks](/part-5/55-frontend-frameworks/)
+- [5.6 Real-Time Data & WebSockets](/part-5/56-realtime-websockets/)
+- [5.7 User Experience & Transaction Friction](/part-5/57-user-experience-friction/)
 
 ### Part 6: Infrastructure & Production 🔵
 *Running and scaling Solana infrastructure*
 
-- [6.1 RPC Providers](/part-6/6.1-rpc-providers/)
-- [6.2 Indexing Solutions](/part-6/6.2-indexing-solutions/)
-- [6.3 Deployment Strategies](/part-6/6.3-deployment-strategies/)
-- [6.4 Monitoring & Observability](/part-6/6.4-monitoring-observability/)
-- [6.5 Security Best Practices](/part-6/6.5-security-practices/)
-- [6.6 Production Considerations](/part-6/6.6-production-considerations/)
-- [6.7 Oracles & Data Feeds](/part-6/6.7-oracles-data-feeds/)
+- [6.1 RPC Providers](/part-6/61-rpc-providers/)
+- [6.2 Indexing Solutions](/part-6/62-indexing-solutions/)
+- [6.3 Deployment Strategies](/part-6/63-deployment-strategies/)
+- [6.4 Monitoring & Observability](/part-6/64-monitoring-observability/)
+- [6.5 Security Best Practices](/part-6/65-security-practices/)
+- [6.6 Production Considerations](/part-6/66-production-considerations/)
+- [6.7 Oracles & Data Feeds](/part-6/67-oracles-data-feeds/)
 
 ### Appendices
 *Reference materials*
@@ -138,4 +138,4 @@ For hands-on builders:
 
 ## 🚀 Start Learning
 
-Ready to begin? Start with [1.1 The Trust Problem](/part-1/1.1-the-trust-problem/)
+Ready to begin? Start with [1.1 The Trust Problem](/part-1/11-the-trust-problem/)
