@@ -28,22 +28,14 @@ jobs:
 
       - name: Install D2
         run: |
-          set -euo pipefail
-          D2_VERSION=0.7.1
-          D2_ARCH=amd64
-          D2_OS=linux
-          curl -fsSL -o /tmp/d2.tar.gz "https://github.com/terrastruct/d2/releases/download/v${D2_VERSION}/d2-v${D2_VERSION}-${D2_OS}-${D2_ARCH}.tar.gz"
-          tar -xzf /tmp/d2.tar.gz -C /tmp
-          D2_BIN="$(find /tmp -maxdepth 2 -type f -name d2 -print -quit)"
-          if [ -z "$D2_BIN" ]; then
-            echo "D2 binary not found in archive"
-            exit 1
-          fi
-          sudo install -m 0755 "$D2_BIN" /usr/local/bin/d2
+          curl -fsSL https://d2lang.com/install.sh | sh -s --
+          export PATH="$HOME/.local/bin:$PATH"
           d2 --version
 
       - name: Build Starlight site
-        run: npm run build
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
