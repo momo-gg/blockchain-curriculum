@@ -11,9 +11,6 @@ export default defineConfig({
 		starlight({
 			title: 'Solana Onboarding Curriculum',
 			description: 'A comprehensive learning guide for understanding blockchain technology and Solana — from first principles to production deployment.',
-			markdown: {
-				rehypePlugins: [rehypeMermaid],
-			},
 			social: [
 				{
 					label: 'GitHub',
@@ -36,11 +33,6 @@ export default defineConfig({
 					graphConfig: {
 						depth: -1,
 						depthDirection: 'both',
-					},
-					sitemapConfig: {
-						contentRoot: './src/content/docs',
-						pageInclusionRules: ['**/*.md', '**/*.mdx'],
-						linkInclusionRules: ['**/*'],
 					},
 				}),
 			],
@@ -134,5 +126,22 @@ export default defineConfig({
 				},
 			],
 		}),
+		{
+			name: 'rehype-mermaid-starlight',
+			hooks: {
+				'astro:config:setup': ({ config, updateConfig }) => {
+					const rehypePlugins = [
+						...(config.markdown?.rehypePlugins ?? []),
+						rehypeMermaid,
+					];
+					updateConfig({
+						markdown: {
+							...config.markdown,
+							rehypePlugins,
+						},
+					});
+				},
+			},
+		},
 	],
 });
