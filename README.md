@@ -28,8 +28,8 @@ This curriculum answers **"Why?"** before **"How?"** — building understanding 
 
 ### Choose Your Track
 
-| Track              | Time        | Who Should Take It             | Start Here                                                                                                     |
-| ------------------ | ----------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| Track              | Time        | Who Should Take It             | Start Here                                                                                                        |
+| ------------------ | ----------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | **Fast Track**     | 2-3 hours   | Executives, stakeholders       | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (green sections only)     |
 | **PM/EM Track**    | 6-8 hours   | Product & Engineering Managers | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (green + yellow sections) |
 | **Engineer Track** | 20-30 hours | Software Engineers             | [1.1 The Trust Problem](https://solflare-wallet.github.io/part-1/11-the-trust-problem/) (all sections + projects) |
@@ -208,6 +208,12 @@ Pushing to `main` triggers GitHub Actions and deploys to GitHub Pages.
 - **Build fails**: `rm -rf node_modules package-lock.json dist .astro && npm install && npm run dev`
 - **Duplicate content IDs**: `npm run dev -- --force` (clears the content cache)
 - **Broken links**: ensure dotless slugs in URLs (e.g., `/part-1/11-the-trust-problem/`)
+
+### Linting and Formatting
+
+- `npm run lint` checks ESLint rules.
+- `npm run format` applies Prettier formatting.
+- `npm run format:check` verifies Prettier formatting.
 
 ---
 
