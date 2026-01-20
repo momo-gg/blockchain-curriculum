@@ -201,7 +201,7 @@ description: 'Brief description of the content'
 ```
 
 - Update the `sidebar` in `astro.config.mjs` when adding or reordering pages.
-- Mermaid diagrams are supported via ```mermaid``` fences (rendered by `rehype-mermaid` with Playwright).
+- D2 diagrams are supported via ```d2``` fences (rendered by `astro-d2`). Install the D2 binary or set `ASTRO_D2_SKIP=1` to skip generation.
 
 ### Styling
 

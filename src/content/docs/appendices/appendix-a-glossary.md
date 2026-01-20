@@ -434,4 +434,4 @@ Return on deposited assets, usually expressed as APY (Annual Percentage Yield).
 - [Solana Cookbook](https://solanacookbook.com/)
 - [Metaplex Documentation](https://docs.metaplex.com/)
 
-→ [Appendix B: Timeline](./appendix-b-timeline.md)
+→ [Appendix B: Timeline](/appendices/appendix-b-timeline/)
