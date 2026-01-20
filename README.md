@@ -201,7 +201,7 @@ description: 'Brief description of the content'
 ```
 
 - Update the `sidebar` in `astro.config.mjs` when adding or reordering pages.
-- Mermaid diagrams are supported via ```mermaid``` fences.
+- Mermaid diagrams are supported via ```mermaid``` fences (rendered by `rehype-mermaid` with Playwright).
 
 ### Styling
 
